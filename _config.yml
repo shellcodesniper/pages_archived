@@ -66,28 +66,28 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  johndoe
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+twitter_username: KuuWangE
+github_username:  shellcodesniper
+facebook_username: 
+linkedin_username: shellcodesniper
+behance_username: 
+instagram_username: 
+medium_username: 
+telegram_username: 
+dribbble_username: 
+flickr_username: 
 
 #for comments using disqus
-disqus_shortname: sujay-kundu
+disqus_shortname: KuuWangE
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+wakatime_username: KuuWangE
 
 # mailchimp embedded form url (newsletter):
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # formspree (contact form)
-formspree_email: johndoe@gmail.com
+formspree_email: shellcodesniper@gmail.com
 
 # syntax highlighter
 markdown: kramdown
@@ -95,7 +95,7 @@ highlighter: rouge
 permalink: pretty
 
 # google analytics
-google_analytics: UA-46783401-10
+google_analytics: UA-168554797-1
 
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
