@@ -25,32 +25,32 @@ urls:
 # Edit these details
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hello, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
-author_email: "johndoe@gmail.com"
-author_location: India
-author_website_url: "http://johndoe.com"
+author: 김도균
+author_bio: 프로그래밍 / 리버싱 분야를 정말 좋아하는 건강코더 김도균입니다, 들어와주셔서 감사합니다. 
+author_email: "shellcodesniper@gmail.com"
+author_location: South Korea
+author_website_url: "http://kuuwang.com"
 
 author_work_experiences:
-            - company_name: Google
+            - company_name: 캬라멜라
               company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+              company_url: https://caramella.kr
+              designation: 개발 Lead
+              description: 딥러닝 / 애플리케이션 / 쇼핑몰 플랫폼등 구현에 직접 참여
               visibility: true
             - company_name: Microsoft
               company_logo: microsoft.png
               company_url: https://microsoft.com
               designation: Azure Developer
               description: Worked on various Azure Cloud Products
-              visibility: true
+              visibility: false
 
 author_education_details:
               - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+                college_name: 제주대학교
+                college_url: https://jejunu.ac.kr
+                college_degree: 컴퓨터공학과
+                description: 재학
                 visibility: true
 
 author_project_details:
@@ -58,18 +58,18 @@ author_project_details:
                 project_title: Gamers Hub
                 project_description: A Platform built for Gamers and Game Devs
                 project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
+                visibility: false
+              # - project_thumbnail: hack4r.PNG
+              #   project_title: Hack4r
+              #   project_description: A Platform built for Hackers and Penetration Testers
+              #   project_url: https://hack4r.com
+              #   visibility: true
 
 # social links
-twitter_username: KuuWangE
+twitter_username:
 github_username:  shellcodesniper
 facebook_username: 
-linkedin_username: shellcodesniper
+linkedin_username: 도균-김-b8808414a
 behance_username: 
 instagram_username: 
 medium_username: 
