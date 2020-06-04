@@ -1,13 +1,23 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+<script>
+        $(document).ready(function(){
+            $('#typewriteText').typewrite({
+                actions: [
+                    {type: 'Hello, I’m John Doe, Web-Developer based on San Fransisco.'}
+                ]
+            });
+        });
+    </script>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+<div class="col-lg-8 offset-md-2">
+  <div class="jumbotron" style="text-align: center;">
+    <h1 class="display-4">Hello, world!</h1>
+    <h3> devlopr is a jekyll theme built for developers like you !</h3>
+    <p class="lead" id="typewriteText"></p>
+    <button class="btn btn-dark btn-lg"><a href="/get-started">Get Started </a></button>
+  </div>
+</div>

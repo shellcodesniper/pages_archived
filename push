@@ -1,6 +1,0 @@
-#!/bin/bash
-#To remove cache without gitignore then do this
-#git rm -r --cached . && git add .
-
-#git ls-files | xargs wc -l
-git add . && git commit -m "Update blog" && git push
