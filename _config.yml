@@ -9,18 +9,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: About Me
       url: /about
-    - text: Blog
+    - text: 블로그
       url: /blog
-    - text: Gallery
+    - text: 갤러리
       url: /gallery
-    - text: Shop
-      url : /shop
+    # - text: Shop
+    #   url : /shop
     - text: Contact Me
       url : /contact
-    - text: Styleguide
-      url: /styleguide
-    - text: Get Started
-      url: /get-started
+    # - text: Styleguide
+    #   url: /styleguide
+    # - text: Get Started
+    #   url: /get-started
 
 # Edit these details
 
@@ -33,7 +33,7 @@ author_website_url: "http://kuuwang.com"
 
 author_work_experiences:
             - company_name: 캬라멜라
-              company_logo: google.png
+              company_logo: logo_caramella.png
               company_url: https://caramella.kr
               designation: 개발 Lead
               description: 딥러닝 / 애플리케이션 / 쇼핑몰 플랫폼등 구현에 직접 참여
@@ -46,7 +46,7 @@ author_work_experiences:
               visibility: false
 
 author_education_details:
-              - college_logo: mit.png
+              - college_logo: jejunu.png
                 college_name: 제주대학교
                 college_url: https://jejunu.ac.kr
                 college_degree: 컴퓨터공학과
