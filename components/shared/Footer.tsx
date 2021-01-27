@@ -50,7 +50,7 @@ const Footer: FunctionComponent<FooterPropsInterface> = (_props: FooterPropsInte
               <br />
               <span className="card-text">
                 <h5>010-8139-3214</h5>
-                MAIL: <a href="mainto:admin@kuuwang.com">admin@kuuwang.com</a><br />
+                MAIL: <a href="mailto:admin@kuuwang.com">admin@kuuwang.com</a><br />
               </span>
               <br />
               <span className="card-text font_11">
