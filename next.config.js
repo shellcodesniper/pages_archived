@@ -22,3 +22,8 @@ module.exports = withCSS({
     return config;
   },
 });
+
+module.exports = {
+  poweredByHeader: false,
+  generateEtags: false,
+}

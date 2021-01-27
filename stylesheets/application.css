@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', sans-serif !important;
+  src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+}
+
+body {
+  background-color: #343a40 !important;
+  font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', sans-serif !important;
+  color: #fff;
+}
+
+:root {
+  font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', sans-serif !important;
+  --bs-font-sans-serif: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', sans-serif !important;
+}
+
+.spacer {
+  height: 5vh;
+}
+
+.greyBackground {
+  background-color: #404040;
+}
+
+.descript {
+  font-size: 0.8rem;
+}
+
+.btn-noround {
+  border-radius: 0 !important;
+}
+
+.form-check-input:checked {
+  background-color: #eddedc !important;
+  border-color: #eddedc !important;
+}
+
+.logo_top {
+  width:4rem;
+}

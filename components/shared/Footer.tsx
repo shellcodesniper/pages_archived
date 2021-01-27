@@ -12,8 +12,8 @@ interface FooterDivPropsInterface {
 
 const FooterDiv: FunctionComponent<FooterDivPropsInterface> = (props: FooterDivPropsInterface) => {
   return (
-    <div className="col-12 col-md-3 pb-1">
-      <div className="card w100h100">
+    <div className="col-12 col-md-4 pb-1">
+      <div className="card bg-dark text-white w100h100">
         <div className="card-body">
           <h5 className="card-title font_12 font_bold">{props.title}</h5>
           {props.children}
@@ -25,7 +25,7 @@ const FooterDiv: FunctionComponent<FooterDivPropsInterface> = (props: FooterDivP
 
 const Footer: FunctionComponent<FooterPropsInterface> = (props: FooterPropsInterface) => {
   const openBusinessInfo: any = () => {
-    window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no={사업자등록번호-제거}', 'bizCommPop', 'width=750, height=950;');
+    window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=4906600271', 'bizCommPop', 'width=750, height=950;');
     return false;
   }
 
@@ -36,8 +36,8 @@ const Footer: FunctionComponent<FooterPropsInterface> = (props: FooterPropsInter
           <div className="row">
             <FooterDiv title="Company">
               <span className="card-text font_11">
-                owner. 김율 tel. 010-8139-3214<br />
-                사업자 등록번호. 000-00-00000 mail order license. 2020-서울강남-02498호
+                owner. 김도균 tel. 010-8139-3214<br />
+                사업자 등록번호. 490-66-00271 mail order license. 2020-제주용담1-0020호
                 <br />
                 <a href="#none" onClick={openBusinessInfo}>[사업자정보확인]</a><br />
                 개인정보 처리담당자. 김도균 (admin@kuuwang.com)<br />
@@ -46,20 +46,21 @@ const Footer: FunctionComponent<FooterPropsInterface> = (props: FooterPropsInter
               <h6 className="card-subtitle mb-2 text-muted font_11">copyright © THEANNE all rights reserved / published by plain design</h6>
             </FooterDiv>
 
-            <FooterDiv title="C/S CENTER">
+            <FooterDiv title="CONTACT">
+              <br />
               <span className="card-text">
                 <h5>010-8139-3214</h5>
+                MAIL: <a href="mainto:admin@kuuwang.com">admin@kuuwang.com</a><br />
               </span>
+              <br />
               <span className="card-text font_11">
-                MON-FRI / am11:00-pm6:00<br />
-                OFF TIME / pm1:00-pm2:00<br />
-                DAY OFF (SAT/SUN/HOLIDAY)
+                <u>문자메세지로 보내주셔야 확인가능합니다.</u>
               </span>
             </FooterDiv>
             <FooterDiv title="ACCOUNT">
               <span className="card-text font_12">
-                국민 11111111<br />
-                예금주: ㅁㅁㅁㅁ <br />
+                국민 701801-04-248988<br />
+                예금주: 김도균(뉴에벨) <br />
                 <br />
                 <select className="form-select" onChange={() => {if((this as any).value) window.open((this as any).value);}}>
                   <option value="">인터넷뱅킹 바로가기&nbsp;&nbsp; </option>
@@ -79,16 +80,6 @@ const Footer: FunctionComponent<FooterPropsInterface> = (props: FooterPropsInter
                   <option value="https://www.e-jejubank.com/JeJuBankInfo.do">&nbsp;제주은행</option>
                   <option value="https://www.knbank.co.kr/ib20/mnu/BHP000000000001">&nbsp;경남은행</option>
                 </select>
-              </span>
-            </FooterDiv>
-
-            <FooterDiv title="[교환/반품 주소">
-              <span className="card-text font_11">
-                주소: 제주도 제주시 제주동 제주1-111<br />
-                자세한 주소주소주소 <br />
-                <br />
-                <br />
-                <u>* 공지사항 및 이용안내를 참고하여 지정택배사로 반품요청해주세요. *</u>
               </span>
             </FooterDiv>
 

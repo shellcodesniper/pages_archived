@@ -5,10 +5,10 @@ interface interfaceTopNavbar {
 const topNavbar = ({ isLoggedIn }: interfaceTopNavbar) => {
   return (
     <div>
-      <nav className="navbar transparent navbar-expand-lg d-block d-sm-block d-lg-none navbar-light rounded nav-mobile" aria-label="SANDMOOD">
+      <nav className="navbar transparent navbar-expand-lg d-block d-sm-block d-lg-none navbar-dark rounded nav-mobile" aria-label="SANDMOOD">
         <div className="container-fluid">
           <div className="navbar w-100 order-1 order-md-0 dual-collapse2">
-            <a className="navbar-brand" href="/"><img src="/static/LOGO.svg" className="logo_top"></img></a>
+            <a className="navbar-brand" href="/"><img src="/static/images/profile.png" className="logo_top"></img></a>
             <button className="navbar-toggler" type="button" data-toggle="slide-collapse" aria-expanded="false">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -20,58 +20,10 @@ const topNavbar = ({ isLoggedIn }: interfaceTopNavbar) => {
                 </li>
 
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown" id="dropdown_outer" data-bs-toggle="dropdown" aria-expanded="false">OUTER</a>
+                  <a className="nav-link dropdown" id="dropdown_outer" data-bs-toggle="dropdown" aria-expanded="false">test</a>
                   <ul className="dropdown-menu" aria-labelledby="dropdown_outer">
-                    <li><a className="dropdown-item" href="/category/jacket/">JACKET</a></li>
-                    <li><a className="dropdown-item" href="/category/coat/">COAT</a></li>
-                    <li><a className="dropdown-item" href="/category/cardigan/">CARDIGAN</a></li>
-                    <li><a className="dropdown-item" href="/category/jumper/">JUMPER</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown" id="dropdown_top" data-bs-toggle="dropdown" aria-expanded="false">TOP</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_top">
-                    <li><a className="dropdown-item" href="/category/tee">TEE</a></li>
-                    <li><a className="dropdown-item" href="/category/sleeveless/">SLEEVELESS</a></li>
-                    <li><a className="dropdown-item" href="/category/knit/">KNIT</a></li>
-                    <li><a className="dropdown-item" href="/category/blouse-shirt/">BLOUSE / SHIRT</a></li>
-                    <li><a className="dropdown-item" href="/category/mtm-hood/">MTM / HOOD</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="/product/?category=dress">DRESS</a>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown" id="dropdown_bottom" data-bs-toggle="dropdown" aria-expanded="false">BOTTOM</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_bottom">
-                    <li><a className="dropdown-item" href="/category/pants/">PANTS</a></li>
-                    <li><a className="dropdown-item" href="/category/denim/">DENIM</a></li>
-                    <li><a className="dropdown-item" href="/category/slacks/">SLACKS</a></li>
-                    <li><a className="dropdown-item" href="/category/shorts/">SHORTS</a></li>
-                    <li><a className="dropdown-item" href="/category/skirt/">SKIRT</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown" id="dropdown_shoesNbag" data-bs-toggle="dropdown" aria-expanded="false">SHOES / BAG</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_shoesNbag">
-                    <li><a className="dropdown-item" href="/category/shoes/">SHOES</a></li>
-                    <li><a className="dropdown-item" href="/category/bag/">BAG</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown" id="dropdown_acc" data-bs-toggle="dropdown" aria-expanded="false">ACC</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_acc">
-                    <li><a className="dropdown-item" href="/category/jewelry/">JEWELRY</a></li>
-                    <li><a className="dropdown-item" href="/category/hat/">HAT</a></li>
-                    <li><a className="dropdown-item" href="/category/belt/">BELT</a></li>
-                    <li><a className="dropdown-item" href="/category/etc/">ETC</a></li>
-                    <li><a className="dropdown-item" href="/category/muffler/">MUFFLER</a></li>
-                    <li><a className="dropdown-item" href="/category/glass/">GLASS</a></li>
+                    <li><a className="dropdown-item" href="/about/tes2t">test2</a></li>
+                    <li><a className="dropdown-item" href="/about/test">test</a></li>
                   </ul>
                 </li>
               </ul>
@@ -85,94 +37,31 @@ const topNavbar = ({ isLoggedIn }: interfaceTopNavbar) => {
                 <li className="nav-item">
                   <a className="nav-link" href="/member/mypage">MYPAGE</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">BOARD</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;장바구니
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="fa fa-search fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;검색
-                  </a>
-                </li>
               </ul>
-
             </div>
           </div>
         </div>
       </nav>
 
-      <nav className="navbar transparent navbar-expand-lg navbar-light mt-2 mb-3 rounded d-none d-lg-block" aria-label="SANDMOOD">
+      <nav className="navbar transparent navbar-expand-lg navbar-dark mt-2 mb-3 rounded d-none d-lg-block" aria-label="SANDMOOD">
         <div className="container-fluid">
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <a className="navbar-brand" href="/"><img className="logo_top" src="/static/LOGO.svg"></img></a>
+            <a className="navbar-brand" href="/"><img className="logo_top" src="/static/images/profile.png"></img></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPC" aria-controls="navbarPC" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarPC">
+            <div className="collapse navbar-collapse text-white" id="navbarPC">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="/product/?category=best">BEST</a>
                 </li>
 
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown dropdown-auto" id="dropdown_outer" data-bs-toggle="dropdown" aria-expanded="false">OUTER</a>
+                  <a className="nav-link dropdown" id="dropdown_outer" data-bs-toggle="dropdown" aria-expanded="false">test</a>
                   <ul className="dropdown-menu" aria-labelledby="dropdown_outer">
-                    <li><a className="dropdown-item" href="/category/jacket/">JACKET</a></li>
-                    <li><a className="dropdown-item" href="/category/coat/">COAT</a></li>
-                    <li><a className="dropdown-item" href="/category/cardigan/">CARDIGAN</a></li>
-                    <li><a className="dropdown-item" href="/category/jumper/">JUMPER</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown dropdown-auto" id="dropdown_top" data-bs-toggle="dropdown" aria-expanded="false">TOP</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_top">
-                    <li><a className="dropdown-item" href="/category/tee">TEE</a></li>
-                    <li><a className="dropdown-item" href="/category/sleeveless/">SLEEVELESS</a></li>
-                    <li><a className="dropdown-item" href="/category/knit/">KNIT</a></li>
-                    <li><a className="dropdown-item" href="/category/blouse-shirt/">BLOUSE / SHIRT</a></li>
-                    <li><a className="dropdown-item" href="/category/mtm-hood/">MTM / HOOD</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="/product/?category=dress">DRESS</a>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown dropdown-auto" id="dropdown_bottom" data-bs-toggle="dropdown" aria-expanded="false">BOTTOM</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_bottom">
-                    <li><a className="dropdown-item" href="/category/pants/">PANTS</a></li>
-                    <li><a className="dropdown-item" href="/category/denim/">DENIM</a></li>
-                    <li><a className="dropdown-item" href="/category/slacks/">SLACKS</a></li>
-                    <li><a className="dropdown-item" href="/category/shorts/">SHORTS</a></li>
-                    <li><a className="dropdown-item" href="/category/skirt/">SKIRT</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown dropdown-auto" id="dropdown_shoesNbag" data-bs-toggle="dropdown" aria-expanded="false">SHOES / BAG</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_shoesNbag">
-                    <li><a className="dropdown-item" href="/category/shoes/">SHOES</a></li>
-                    <li><a className="dropdown-item" href="/category/bag/">BAG</a></li>
-                  </ul>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown dropdown-auto" id="dropdown_acc" data-bs-toggle="dropdown" aria-expanded="false">ACC</a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown_acc">
-                    <li><a className="dropdown-item" href="/category/jewelry/">JEWELRY</a></li>
-                    <li><a className="dropdown-item" href="/category/hat/">HAT</a></li>
-                    <li><a className="dropdown-item" href="/category/belt/">BELT</a></li>
-                    <li><a className="dropdown-item" href="/category/etc/">ETC</a></li>
-                    <li><a className="dropdown-item" href="/category/muffler/">MUFFLER</a></li>
-                    <li><a className="dropdown-item" href="/category/glass/">GLASS</a></li>
+                    <li><a className="dropdown-item" href="/about/tes2t">test2</a></li>
+                    <li><a className="dropdown-item" href="/about/test">test</a></li>
                   </ul>
                 </li>
               </ul>
@@ -185,24 +74,6 @@ const topNavbar = ({ isLoggedIn }: interfaceTopNavbar) => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/member/mypage">MYPAGE</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">BOARD</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="fa fa-search fa-lg" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" onClick={openCategory}>
-                    <i className="fa fa-align-justify fa-lg" aria-hidden="true"></i>
-                  </a>
                 </li>
               </ul>
 

@@ -13,11 +13,12 @@ const GreyDivider:FunctionComponent<DividerPropsInterface> = (props: DividerProp
       <div className="row mt-5 mb-5 greyBackground">
         <div className="title text-center">
           <h2>
-            <span className="font_18">{props.title}</span>
+            <br />
+            <span className="font_24 font_bold">{props.title}</span>
           </h2>
           { props.children
             ? props.children
-            : <p className="font_12">{props.content}</p>
+            : <p className="font_12 font_bold">{props.content}<br/></p>
           }
         </div>
       </div>
