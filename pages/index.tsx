@@ -12,7 +12,7 @@ const IndexPage = () => {
     <div className="container">
       <div className="row mt-5">
         <div className="col-12 col-md-6 offset-md-3">
-          <img className="img-fluid mb-5" src="/static/Images/profile.png"></img>
+          <img className="img-fluid mb-5" src="/static/images/profile.png"></img>
         </div>
       </div>
 
