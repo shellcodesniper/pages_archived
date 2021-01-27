@@ -17,6 +17,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ],
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
@@ -26,5 +30,5 @@
     },
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "next.config.js"]
 }
