@@ -1,5 +1,4 @@
-import React, { useState, useEffect, FunctionComponent } from 'react';
-import { MainProductComponent } from '@components/Product/Product';
+import React, { FunctionComponent } from 'react';
 import InLineScript from '@components/common/InLineScript'
 import GreyDivider from '@components/common/GreyDivider';
 import Layout from '@components/Layout';

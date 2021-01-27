@@ -23,7 +23,7 @@ const FooterDiv: FunctionComponent<FooterDivPropsInterface> = (props: FooterDivP
   )
 };
 
-const Footer: FunctionComponent<FooterPropsInterface> = (props: FooterPropsInterface) => {
+const Footer: FunctionComponent<FooterPropsInterface> = (_props: FooterPropsInterface) => {
   const openBusinessInfo: any = () => {
     window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=4906600271', 'bizCommPop', 'width=750, height=950;');
     return false;

@@ -1,5 +1,4 @@
-import React, { useState, useEffect, FunctionComponent } from 'react';
-import { MainProductComponent } from '@components/Product/Product';
+import React, { FunctionComponent } from 'react';
 import Layout from '@components/Layout';
 
 
@@ -7,8 +6,8 @@ interface LoginPageProps {
 
 };
 
-const LoginPage:FunctionComponent<LoginPageProps> = (props: LoginPageProps) => {
-  const [ userEmail, userPasswd ] = useState('');
+const LoginPage:FunctionComponent<LoginPageProps> = (_props: LoginPageProps) => {
+  // const [ userEmail, userPasswd ] = useState('');
 
   return (
   <Layout>

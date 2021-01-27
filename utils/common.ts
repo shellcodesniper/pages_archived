@@ -18,9 +18,9 @@ namespace COMMON_UTIL {
         ErrorResult(res, 405, `METHOD ${req.method.toUpperCase()} NOT SUPPORT`);
         return false;
       }
-    } else {
-      ErrorResult(res, 500, 'METHOD NOT DEFINED');
-    }
+    } 
+    ErrorResult(res, 500, 'METHOD NOT DEFINED');
+    return false;
     
   }
   export function SuccessResult(res: NextApiResponse, data?: object, msg?: string, status?: number): void {

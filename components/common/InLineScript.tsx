@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FunctionComponent, ReactNode } from 'react';
+import React, { useEffect, FunctionComponent, ReactNode } from 'react';
 
 interface InLineScriptProps {
   script: string;
