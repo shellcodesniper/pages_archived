@@ -98,7 +98,7 @@ interface OnLoadProps {
 
 };
 
-const OnLoadDiv: FunctionComponent<OnLoadProps> = (props: OnLoadProps) => {
+const OnLoadDiv: FunctionComponent<OnLoadProps> = (_props: OnLoadProps) => {
   const inlineScript = `
   $('[data-toggle="slide-collapse"]').on('click', function() {
     $('#navbarMobile1').toggle();

@@ -10,7 +10,7 @@ const LoginPage:FunctionComponent<LoginPageProps> = (_props: LoginPageProps) => 
   // const [ userEmail, userPasswd ] = useState('');
 
   return (
-  <Layout>
+  <Layout isLoggedIn={false} currentPage='login'>
     <div className="container">
       <div className="spacer"></div>
       <div className="spacer"></div>

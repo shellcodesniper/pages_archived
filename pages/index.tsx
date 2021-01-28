@@ -1,4 +1,4 @@
-import React, { useState,FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import InLineScript from '@components/common/InLineScript'
 import GreyDivider from '@components/common/GreyDivider';
 import Layout from '@components/Layout';
@@ -29,7 +29,7 @@ const IndexPage = () => {
   const hackRepeat = [];
   for (let i = 0; i < repeatCount; i += 1) hackRepeat.push(i);
   return (
-  <Layout isLoggedIn={false} currentPage='/' >
+  <Layout isLoggedIn={false} currentPage={'/'}>
     <div className="container">
       <GreyDivider title="OUR SERVICES" />
 

@@ -47,7 +47,7 @@ const topNavbar = (props: interfaceTopNavbar) => {
             <div className="collapse navbar-collapse" id="navbarMobile2">
               <ul className="nav navbar-nav navbar-mla">
                 <li className="nav-item">
-                  <a className='nav-link' href={props.isLoggedIn ? '/member/logout' : '/member/login'}>{ props.isLoggedIn ? 'LOGOUT' : 'LOGIN' }</a>
+                  <a className={isActive(props.currentPage === 'login' || props.currentPage === 'logout')} href={props.isLoggedIn ? '/member/logout' : '/member/login'}>{ props.isLoggedIn ? 'LOGOUT' : 'LOGIN' }</a>
                 </li>
                 <li className="nav-item">
                   <a className={isActive(props.currentPage ==='mypage')} href="/member/mypage">MYPAGE</a>
@@ -92,7 +92,7 @@ const topNavbar = (props: interfaceTopNavbar) => {
             <div className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-mla">
                 <li className="nav-item">
-                  <a className='nav-link' href={props.isLoggedIn ? '/member/logout' : '/member/login'}>{ props.isLoggedIn ? 'LOGOUT' : 'LOGIN' }</a>
+                  <a className={isActive(props.currentPage === 'login' || props.currentPage === 'logout')} href={props.isLoggedIn ? '/member/logout' : '/member/login'}>{ props.isLoggedIn ? 'LOGOUT' : 'LOGIN' }</a>
                 </li>
                 <li className="nav-item">
                   <a className={isActive(props.currentPage ==='mypage')} href="/member/mypage">MYPAGE</a>
