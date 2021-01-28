@@ -15,7 +15,7 @@ const Layout: FunctionComponent<Props> = (props: Props) => {
   return (
     <div>
       <Head>
-        <title>{ props.title ? props.title : 'SANDMOOD'}</title>
+        <title>{ props.title ? props.title : 'KUUWANG'}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <TopNavbar isLoggedIn={props.isLoggedIn} currentPage={props.currentPage} />
