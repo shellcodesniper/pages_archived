@@ -68,3 +68,7 @@
 .mr-5 {
   margin-right: 3rem !important;
 }
+
+.text-bold {
+  font-weight: bold;
+}
