@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import style from '@stylesheets/footer.module.css'
+import InLineScript from '@components/common/InLineScript';
 
 interface FooterPropsInterface {
 
@@ -88,7 +89,25 @@ const Footer: FunctionComponent<FooterPropsInterface> = (_props: FooterPropsInte
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossOrigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <OnLoadDiv />
     </div>
+  )
+}
+
+interface OnLoadProps {
+
+};
+
+const OnLoadDiv: FunctionComponent<OnLoadProps> = (props: OnLoadProps) => {
+  const inlineScript = `
+  $('[data-toggle="slide-collapse"]').on('click', function() {
+    $('#navbarMobile1').toggle();
+    $('#navbarMobile2').toggle();
+  });
+  `;
+
+  return (
+    <InLineScript script={inlineScript} />
   )
 }
 

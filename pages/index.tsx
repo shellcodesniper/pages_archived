@@ -1,70 +1,47 @@
-import React, { FunctionComponent } from 'react';
+import React, { useState,FunctionComponent } from 'react';
 import InLineScript from '@components/common/InLineScript'
 import GreyDivider from '@components/common/GreyDivider';
 import Layout from '@components/Layout';
+import ReactMarkdown from 'react-markdown';
+
+const multitool_readme: string = `
+## Multitool 이란 ?
+
+- 귀사의 Docker를 이용하여 배포/혹은 테스트용 서버의
+
+  **업데이트 / 장애 알림 / 서비스 공격 탐지** 이벤트를 수신하여
+
+  **카카오톡 / 메세지 / 전화** 등으로 수신해보실수 있는 서비스입니다.
+
+  [DockerDeploy 도커허브 바로가기](https://hub.docker.com/repository/docker/shellcodesniper/healthchecker) 
+
+- 해당 서비스에 사용되는 배포용 코드는 오픈소스로 되어있으며, 사용법에 대하여는 레포를 참고하시기 바랍니다.
+
+  [깃허브 레포 바로가기](https://github.com/shellcodesniper/Docker_HealthChecker/)
+
+- **현재 안정화 및 알파 테스트 진행중**으로, 해당 기간동안 서비스 요금은 **무료**입니다.
+
+`
 
 const IndexPage = () => {
+
   const repeatCount = 8;
   const hackRepeat = [];
   for (let i = 0; i < repeatCount; i += 1) hackRepeat.push(i);
   return (
-  <Layout>
+  <Layout isLoggedIn={false} currentPage='/' >
     <div className="container">
-      <div className="row mt-5">
-        <div className="col-12 col-md-6 offset-md-3">
-          <img className="img-fluid mb-5" src="/static/images/profile.png"></img>
-        </div>
-      </div>
-
-      <GreyDivider title="WHO AM I" />
-
-      <div className="row mt-1 mb-5">
-        <div className="col-12 col-md-8 offset-md-2">
-          <div className="card bg-dark text-white">
-            <div className="card-header text-center" >
-              <h1>KUUWANG</h1>
-            </div>
-            <div className="card-body">
-              <span className="text-justify">
-                <h3 className="text-center">스택</h3>
-                <p>FULLSTACK + DevOps</p>
-                <hr />
-                <h3 className="text-center">Work Experience</h3>
-                <br />
-                <p>Work at Caramella (south korea) [2016-2021(current)] </p>
-                <hr />
-                <h3 className="text-center">Personal Project</h3>
-                <br />
-                <span>
-                  api.kuuwang.com &nbsp;
-                  kuuwang.com &nbsp;
-                  주식 자동 트레이딩 &nbsp;
-                  sandmood.com &nbsp;
-                </span>
-                <hr />
-                <h3 className="text-center">GITHUB / LINKEDIN</h3>
-                <br />
-                <h2 className="text-center">
-                  <a className="mr-4" href="https://github.com/shellcodesniper/"><i className="fab fa-github text-white"></i></a>&nbsp;
-                  <a href="https://www.linkedin.com/in/도균-김-b8808414a/"><i className="fab fa-linkedin-in"></i></a>
-                </h2>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <GreyDivider title="OUR SERVICES" />
 
       <div className="row mt-1 mb-5">
         <div className="col-12 col-md-8 offset-md-2">
           <div className="card bg-dark text-white">
             <div className="card-header text-center">
-              <h1>Kuuwang - Multitool API ?</h1>
+              <h1>Multitool API</h1>
             </div>
             <div className="card-body">
               <span className="text-justify font_18">
-                Mobile Push Notification / Sending Point / Product Management / Member Management 등 여러가지 기능들이 모여있는 집합체로서의 역할을 합니다.
+                <ReactMarkdown source={multitool_readme} />
               </span>
             </div>
           </div>

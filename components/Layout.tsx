@@ -5,6 +5,8 @@ import React, { ReactNode } from 'react';
 import { FunctionComponent } from 'react';
 
 type Props = {
+  isLoggedIn: boolean;
+  currentPage: string;
   children?: ReactNode
   title?: string | undefined;
 }
@@ -16,7 +18,7 @@ const Layout: FunctionComponent<Props> = (props: Props) => {
         <title>{ props.title ? props.title : 'SANDMOOD'}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <TopNavbar isLoggedIn={false} />
+      <TopNavbar isLoggedIn={props.isLoggedIn} currentPage={props.currentPage} />
       {props.children}
       <Footer />
     </div>
