@@ -1,5 +1,4 @@
-import React, { FunctionComponent } from 'react';
-import InLineScript from '@components/common/InLineScript'
+import React from 'react';
 import GreyDivider from '@components/common/GreyDivider';
 import Layout from '@components/Layout';
 import ReactMarkdown from 'react-markdown';
@@ -37,42 +36,6 @@ const multitool_readme: string = `
   내용 : [SUPER ALERT] 해당 서버의 ROLLBACK/MASTER/SLAVE 전부 FAIL 입니다. 빠른 확인이 필요합니다.
   \`\`\`
 `
-
-const docker_deploy_readme: string = `
-## DockerDeply ?
-
-- Docker 를 위한 배포 서비스를 안정적으로 진행하실 수 있도록 구성한 도커 컨테이너입니다.
-
-- 오픈소스로 공개되어있으며, 무중단 배포를 가능케 합니다.
-
-- 현재 지원하는 프로젝트는 프론트 / 백엔드 등 http 통신을 통해 상태를 확인할 수 있는 프로젝트에 대하여 지원 합니다.
-
-- 사용법에 대해서는 [깃허브 레포 바로가기](https://github.com/shellcodesniper/Docker_HealthChecker/) 를 참고해 주시기 바랍니다.
-
-- 로드밸런싱 / SSL / 컨테이너들간 연결 변경을 위한 NGINX를 참조하고있습니다.
-
-- 해당 컨테이너는 \`master / slave / rollback\`  세가지의 level 을 가진 컨테이너를 실행하게 됩니다.
-
-- master
-
-  - 메인으로 돌아가게 되는 컨테이너 입니다.
-  - 특별한 문제가 없는 상황에서 항상 살아있도록 유지합니다.
-
-- slave
-
-  - master 컨테이너에 문제가 생겼을때 / master 컨테이너 업데이트가 진행되는 동안 전환되는 컨테이너입니다.
-  - 해당 컨테이너가 메인을 잡게 되면 master 컨테이너 복구를 시도하고, rollback 컨테이너를 깨우게됩니다.
-
-- rollback
-
-  - master / slave 컨테이너에 문제가 발생되었을때 안정된 버전을 메인으로 돌리게 됩니다.
-
-  - 해당 컨테이너가 메인을 잡게 되면 master 컨테이너와 slave 컨테이너의 복구를 시도하게 되고
-
-    MultitoolAPI 사용을 하시는 경우, 등록하신 번호/이메일 등으로 알림을 보내주게됩니다.
-
-- 업데이트는 주 1회 patch / 달 1 회 minor patch / 분기 1회 major patch 를 목표로 진행하고있습니다.
-`;
 
 const IndexPage = () => {
   return (

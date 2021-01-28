@@ -1,5 +1,4 @@
-import React, { FunctionComponent } from 'react';
-import InLineScript from '@components/common/InLineScript'
+import React from 'react';
 import GreyDivider from '@components/common/GreyDivider';
 import Layout from '@components/Layout';
 import ReactMarkdown from 'react-markdown';
