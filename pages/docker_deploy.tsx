@@ -75,20 +75,16 @@ const docker_deploy_readme: string = `
 `;
 
 const IndexPage = () => {
-
-  const repeatCount = 8;
-  const hackRepeat = [];
-  for (let i = 0; i < repeatCount; i += 1) hackRepeat.push(i);
   return (
-  <Layout isLoggedIn={false} currentPage={'/'}>
+  <Layout isLoggedIn={false} currentPage={'multitool'}>
     <div className="container">
-      <GreyDivider title="OUR SERVICES" />
+      <GreyDivider title="DOCKER_DEPLOY" />
 
-      <div className="row mt-1 mb-5">
+      <div className="row mt-5 mb-5">
         <div className="col-12 col-md-8 offset-md-2">
           <div className="card bg-dark text-white">
             <div className="card-header text-center">
-              <h1>DOCKER_DEPLOY</h1>
+              <h1>Multitool API</h1>
             </div>
             <div className="card-body">
               <span className="text-justify font_18">
@@ -99,67 +95,9 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <hr />
-
-      <div className="row mt-5 mb-5">
-        <div className="col-12 col-md-8 offset-md-2">
-          <div className="card bg-dark text-white">
-            <div className="card-header text-center">
-              <h1>Multitool API</h1>
-            </div>
-            <div className="card-body">
-              <span className="text-justify font_18">
-                <ReactMarkdown source={multitool_readme} />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="row">
-      </div>
-
-      <GreyDivider title="INSTAGRAM" />
-      
-      <InstagramDiv username="kuuwange"/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/InstagramFeed/1.5.4/InstagramFeed.min.js"></script>
     </div>
   </Layout>
   )
-}
-
-interface InstagramProps {
-  username: string;
-};
-
-const InstagramDiv: FunctionComponent<InstagramProps> = (props: InstagramProps) => {
-  const inlineScript = `new InstagramFeed({
-    'username': '${props.username}',
-    'container': document.getElementById("instagram-feed"),
-    'display_profile': false,
-    'display_biography': false,
-    'display_gallery': true,
-    'display_captions': false,
-    'callback': null,
-    'styling': true,
-    'items': 12,
-    'items_per_row': 6,
-    'margin': 1
-  });`;
-
-  return (
-    <div className="row mb-5">
-      <div className="card bg-dark text-white py-3 w100">
-        <div className="card-body">
-          <div className="card-text">
-            <InLineScript script={inlineScript}/>
-            <div id="instagram-feed"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 export default IndexPage;

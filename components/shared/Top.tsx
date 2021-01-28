@@ -29,6 +29,12 @@ const topNavbar = (props: interfaceTopNavbar) => {
                   <a className={isActive(props.currentPage ==='about')} aria-current="page" href="/about">ABOUT</a>
                 </li>
                 <li className="nav-item">
+                  <a className={isActive(props.currentPage ==='multitool')} aria-current="page" href="/multitool">MULTITOOL</a>
+                </li>
+                <li className="nav-item">
+                  <a className={isActive(props.currentPage ==='docker_deploy')} aria-current="page" href="/docker_deploy">DOCKER_DEPLOY</a>
+                </li>
+                <li className="nav-item">
                   <a className={isActive(props.currentPage ==='register')} aria-current="page" href="/register">서비스 사용신청</a>
                 </li>
 
@@ -73,6 +79,12 @@ const topNavbar = (props: interfaceTopNavbar) => {
                 </li>
                 <li className="nav-item">
                   <a className={isActive(props.currentPage ==='about')} aria-current="page" href="/about">ABOUT</a>
+                </li>
+                <li className="nav-item">
+                  <a className={isActive(props.currentPage ==='multitool')} aria-current="page" href="/multitool">MULTITOOL</a>
+                </li>
+                <li className="nav-item">
+                  <a className={isActive(props.currentPage ==='docker_deploy')} aria-current="page" href="/docker_deploy">DOCKER_DEPLOY</a>
                 </li>
                 <li className="nav-item">
                   <a className={isActive(props.currentPage ==='register')} aria-current="page" href="/register">서비스 사용신청</a>
