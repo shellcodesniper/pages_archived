@@ -6,6 +6,11 @@ import Layout from '@components/Layout';
 const IndexPage = () => {
   const repeatCount = 8;
   const hackRepeat = [];
+
+  const openResume: any = (e: any) => {
+    e.preventDefault();
+    window.location.href='https://www.notion.so/kuuwang/RESUME-651e80e7158d4d67aa444a08db8f18a4';
+  };
   for (let i = 0; i < repeatCount; i += 1) hackRepeat.push(i);
   return (
   <Layout isLoggedIn={false} currentPage='about'>
@@ -16,13 +21,23 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <GreyDivider title="WHO AM I" />
+      <div>
+        <div className="row mt-5 mb-5 greyBackground">
+          <div className="title text-center">
+            <h2>
+              <br />
+              <span onClick={openResume} className="font_24 font_bold clickable">WHO AM I?(CLICK ME)</span>
+            </h2>
+            <br />
+          </div>
+        </div>
+      </div>
 
       <div className="row mt-1 mb-5">
         <div className="col-12 col-md-8 offset-md-2">
           <div className="card bg-dark text-white">
             <div className="card-header text-center" >
-              <h1>KUUWANG</h1>
+              <h1 className="clickable" onClick={openResume}>KUUWANG</h1>
             </div>
             <div className="card-body">
               <span className="text-justify">
